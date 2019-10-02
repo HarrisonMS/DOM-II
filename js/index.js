@@ -35,9 +35,9 @@ window.addEventListener("scroll", () => {
 ///////######    4  HEADER IMG CHANGE ON DBLCLK
 
 const changeImg = document.querySelector(".funBus");
-changeImg.addEventListener("auxclick", () => {
+changeImg.addEventListener("auxclick", (e) => {
 changeImg.src= "img/futureBus.jpg"
-console.log(changeImg)
+changeImg.style.width = "99%";
 })
 
 ////  ######  5  HEADER LOGO SCALE UP ON MOUSE OVER
@@ -81,6 +81,22 @@ btn1.addEventListener("click", (e) => {
   e.stopPropagation();
 })
 
+
+
+////    #### 9 
+const headerText = document.querySelector(".intro h2");
+
+headerText.addEventListener("mouseleave", (e) =>{
+    headerText.textContent = "Bus of The Future";
+})
+console.log(headerText);
+
+const headerTextP = document.querySelector(".intro p");
+
+headerTextP.addEventListener("mouseleave", (e) =>{
+    headerTextP.textContent = "Now stick that bad boy in a vacuum sealed tube and we are in business... fyi bad boy is a right click on the fun bus";
+})
+console.log(headerText);
 
 // const btn1 = document.querySelectorAll(".btn");
 
