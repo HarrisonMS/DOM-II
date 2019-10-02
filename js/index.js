@@ -47,6 +47,26 @@ const headerLogo = document.querySelector('.logo-heading');
 // INCREASE SIZE OF LOGO HEADING ON MOUSEOVER
 headerLogo.addEventListener("mouseover", (e) => e.target.style.transform = "scale(1.5)");
 
+
+/// ####  6 
+
+const fontWheel = document.querySelector(".destination p");
+
+fontWheel.addEventListener("wheel", myFunction);
+
+function myFunction() {
+  this.style.fontSize = "20px";
+}
+
+// const fontWheel = document.querySelector(".destination p");
+
+// fontWheel.addEventListener("wheel", myFunction);
+
+// function myFunction() {
+//   this.style.fontSize = "35px";
+// }
+
+
 // const footer = document.getElementsByClassName(".footer") = (el =>{
 //     footer.addEventListener
 // });
