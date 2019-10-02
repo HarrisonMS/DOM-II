@@ -58,16 +58,50 @@ function myFunction() {
 }
 
 /////+======#######  7 MOUSE ENTER FOOTER SCALE AND UNSCALE
-// const catImage = docuement.querySelector(".img-content");
+
 const b = document.querySelector(".footer")
 b.addEventListener("mouseenter", (e) => {
     b.style.transform = "scale(5.0)";
     b.style.transition = "all 2s"
-  })
-  b.addEventListener("mouseleave", (e) => {
-   b.style.transform = "scale(.5)";
-   b.style.transition = "all 2s"
-  })
+})
+b.addEventListener("mouseleave", (e) => {
+    b.style.transform = "scale(.5)";
+    b.style.transition = "all 2s"
+})
+
+
+///////########  8
+
+const btn1 = document.querySelector(".btn");
+
+
+
+btn1.addEventListener("click", (e) => {
+  btn1.style.backgroundColor ="#5a4e5e";
+  e.stopPropagation();
+})
+
+
+// const btn1 = document.querySelectorAll(".btn");
+
+
+
+// btn1.addEventListener("click", (e) => {
+//   btn1.forEach.style.backgroundColor ="#5a4e5e";
+//   e.stopPropagation();
+// })
+
+//   let button = document.createElement("btn");
+
+//   button.textContent = 'Button 1';
+  
+//   button.classList.add('btn');
+  
+//   button.addEventListener('click', (e) => {
+//       console.log('clicked!');
+//   });
+  
+//   parent.appendChild(button);
 
 
 
